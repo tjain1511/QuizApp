@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <integer-array name="img_id_arr">
+        <item>@drawable/avatar2</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/avatar4</item>
+        <item>@drawable/avatar1</item>
+    </integer-array>
+</resources>

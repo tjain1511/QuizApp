@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AvatarActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar8"
+                app:civ_border_width=".2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar7"
+                app:civ_border_width=".2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar2" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar6"
+                app:civ_border_width=".2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar8" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar5"
+                app:civ_border_width=".2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar4"
+                app:civ_border_width=".2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar5" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/ladka"
+                app:civ_border_width=".2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar6" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar2"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width=".2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar4" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar1"
+                android:tag="avatar1"
+                app:civ_border_color="#000000"
+                app:civ_border_overlay="true"
+                app:civ_border_width=".2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bold"
+        android:text="Pick your avatar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#253A48"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/center_av"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bcolor"
+        android:clickable="true"
+        android:elevation="5dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle"
+        android:tag="avatar1"
+        android:visibility="invisible"
+        app:civ_border_color="#000000"
+        app:civ_border_overlay="true"
+        app:civ_border_width=".2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

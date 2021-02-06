@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Img"
+                app:srcCompat="@drawable/hexagon" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bold"
+                android:text="Total Score"
+                android:textAllCaps="true"
+                android:textColor="#253A48"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <pl.pawelkleczkowski.customgauge.CustomGauge
+                android:id="@+id/gauge2"
+                android:layout_width="180dp"
+                android:layout_height="205dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                app:gaugeEndValue="100"
+                app:gaugePointEndColor="#FC5C7B"
+                app:gaugePointStartColor="#F23B5F"
+                app:gaugeStartAngle="140"
+                app:gaugeStartValue="0"
+                app:gaugeStrokeCap="ROUND"
+                app:gaugeStrokeColor="@color/md_grey_400"
+                app:gaugeStrokeWidth="20dp"
+                app:gaugeSweepAngle="260"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Img"
+                app:srcCompat="@drawable/hexagon" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bold"
+                android:text="Rank"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#253A48"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/homeTotalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="0"
+                android:textColor="#253A48"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+            <ImageView
+                android:id="@+id/Img"
+                android:layout_width="0dp"
+                android:layout_height="400dp"
+                android:background="@drawable/home_top"
+                android:elevation="5dp"
+                android:fadeScrollbars="false"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_top" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/homeAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/bcolor"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:tag="avatar1"
+                android:translationZ="15dp"
+                app:civ_border_overlay="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Img" />
+
+            <TextView
+                android:id="@+id/quoteLine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/regular"
+                android:textAlignment="center"
+                android:textColor="#253A48"
+                android:textSize="20sp"
+                android:translationZ="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/Img"
+                app:srcCompat="@drawable/hexagon" />
+
+            <TextView
+                android:id="@+id/homeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:translationZ="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/homeAvatar"
+                app:layout_constraintStart_toStartOf="@+id/homeAvatar"
+                app:layout_constraintTop_toBottomOf="@+id/homeAvatar" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bold"
+                android:text="games played"
+                android:textAllCaps="true"
+                android:textColor="#253A48"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/bold"
+                android:text="Your accuracy"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+
+                android:id="@+id/homeGamesPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="0"
+                android:textColor="#253A48"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+            <TextView
+                android:id="@+id/homeUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:translationZ="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/homeName"
+                app:layout_constraintStart_toStartOf="@+id/homeName"
+                app:layout_constraintTop_toBottomOf="@+id/homeName" />
+
+            <TextView
+                android:id="@+id/homeRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="0"
+                android:textColor="#253A48"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="0%"
+                android:textColor="#253A48"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:translationY="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/gauge2"
+                app:layout_constraintStart_toStartOf="@+id/gauge2"
+                app:layout_constraintTop_toTopOf="@+id/gauge2" />
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="playNow"
+                android:translationZ="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Img"
+                app:layout_constraintEnd_toEndOf="@id/Img"
+                app:srcCompat="@drawable/playbutton" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="15dp"
+                android:fontFamily="@font/bold"
+                android:text="Play Now"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="@+id/button2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
